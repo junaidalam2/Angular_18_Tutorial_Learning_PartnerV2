@@ -1,0 +1,98 @@
+
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Serial No</th>
+                    <th>Role Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of roleList; let srno = index">
+                    <td>
+                        {{srno}}
+                    </td>
+                    <td>
+                        {{item.role}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- <div class="row">
+    <div class="col-4">
+        <ul>
+            <li *ngFor="let item of roleList">{{item.role}}</li>
+        </ul>
+    </div>
+    <div class="col-4">
+        <select>
+            <option *ngFor="let item of roleList" [value]="item.roleID">{{item.role}}</option>
+        </select>
+    </div>
+</div> -->
+
+<!-- <p>roles works!</p> -->
+
+<!-- interpolation -> render variable -->
+<!-- <div class="row">
+    <div class="col-3">
+        <p>{{firstName}}</p>
+    </div>
+    <div class="col-3">
+        <p>{{version}}</p>
+    </div>
+    <div class="col-3">
+        <p>{{currentDate}}</p>
+    </div>
+    <div class="col-3">
+        <p>{{selectState}}</p>
+    </div>
+</div> -->
+<!-- binding - 
+    one way
+    can bind properites
+    can bind values / data - i.e. display value in form
+-->
+<!-- <div class="row">
+    <div class="col-3">
+        <label for="form-element">form element</label>
+        <input type="text" [value]="firstName" class="form-control" id="form-element"/>
+    </div>
+    <div class="col-3">
+        <label for="form-input">form input</label>
+        <input [type]="inputType" id="form-input"/>
+    </div> -->
+    <!-- two way binding - variable updated by user and rendered dynamically -->
+    <!-- <div class="col-3">
+        <label for="form-two-way-binding">form binding</label>
+        <input type="text" [(ngModel)]="firstName" class="form-control" id="form-two-way-binding"/>
+    
+        <div class="col-3">
+            <select [(ngModel)]="selectState">
+                <option value="MH">MH</option>
+                <option value="MP">MP</option>
+                <option value="Goa">Goa</option>
+            </select>
+        </div> -->
+        <!-- event binding -->
+    <!-- <div class="row">
+        <div class="col-3">
+           <button class="btn btn-success" (click)="showWelcomeAlert()">Show Alert</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+           <button class="btn btn-success" (click)="showMessage('Welcome')">Show Alert</button>
+        </div>
+    </div>
+</div> -->
